@@ -1,0 +1,142 @@
+body {
+    a {
+        padding: 1rem;
+    }
+
+    li {
+        padding: 0;
+    }
+
+    header {
+        background-color: #0e0b2b;
+        padding-left: 10rem;
+        padding-right: 10rem;
+
+        p {
+            padding: 0;
+            margin: 0;
+        }
+
+        nav {
+            border-bottom: 1px solid #ffffff2d;
+            position: relative;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
+
+            .btn-light {
+                a {
+                    color: black;
+                }
+            }
+        }
+
+        .child {
+            position: absolute;
+            display: none;
+            text-align: left;
+            padding: 1rem;
+            z-index: 3;
+
+            .fa-folder-closed {
+                color: #0077ff;
+            }
+        }
+
+        .zir-menu {
+            display: none;
+            position: absolute;
+        }
+
+        .grand-pa {
+            position: relative;
+
+            li {
+                line-height: 2rem;
+            }
+        }
+
+        .grand-pa:hover {
+            .zir-menu {
+                display: block;
+                top: 0rem;
+                left: 16rem;
+                width: 12rem !important;
+                padding: 1rem;
+                background-color: #fff;
+                border-radius: 10px;
+                border: rgba(0, 0, 0, 0);
+                text-align: left;
+            }
+        }
+
+
+
+        .parent :nth-child(3):hover {
+            .child {
+                display: block;
+                background-color: white;
+                width: 25%;
+                height: auto;
+                top: 55px;
+                right: 28rem;
+                border-radius: 10px;
+
+                a {
+                    color: black;
+                }
+            }
+        }
+    }
+
+    section {
+        line-height: 40px;
+
+        span {
+            font-size: 25px;
+        }
+
+        h1 {
+            font-size: 50px;
+        }
+
+        .hthree {
+            color: #008aff;
+            font-size: 40px;
+        }
+
+        .screen-desktop {
+            border-radius: 10px;
+            //position: relative;
+            z-index: 1;
+        }
+
+        .screen-phone {
+            position: relative;
+            height: 420px;
+            border-radius: 10px;
+            bottom: 23rem;
+            right: 5rem;
+            overflow: hidden;
+            z-index: 2;
+
+        }
+    }
+
+    .purchasequick {
+        background-color: #008aff;
+        color: white;
+    }
+
+    .purchasequick:hover {
+        background-color: #0077ff;
+    }
+}
